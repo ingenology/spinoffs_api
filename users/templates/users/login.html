@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block page_header %}Login{% endblock page_header %}
+
+
+{% block content %}
+<form method="POST" action="." class="login">
+    {% csrf_token %}
+    {{ form|crispy }}
+    {#<input type="hidden" name="subdomain" value="{{ request.foo }}" />#}
+    <div class="form-actions">
+        <input class="btn btn-primary" type="submit" value="Login" />
+    </div>
+</form>
+{% endblock content %}

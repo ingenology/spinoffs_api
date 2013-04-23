@@ -1,0 +1,14 @@
+# NASA Spinoffs API
+
+There are two components to this project:
+
+1. The `archive` app scrapes NASA's [Spinoffs Database][nasa] and provides a REST API for accessing spinoffs.
+
+2. The `facts` app attaches `Fact` objects to spinoff `Item` in the `archive` app. This provides the API for [NASA Stellar Stuff][nss] app.
+
+The project uses [Django][], [Django REST Framework][drf]
+
+[nasa]: http://spinoff.nasa.gov/spinoff/database
+[nss]: http://nasastellarstuff.com/
+[Django]: https://www.djangoproject.com/
+[drf]: http://django-rest-framework.org/
