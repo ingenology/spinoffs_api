@@ -50,7 +50,6 @@ def find_attr(attr, content, attrs=attrs):
     try:
         return content[attr_index + len(attr):].strip()
     except Exception:
-        import ipdb; ipdb.set_trace();
         return None  # yeah....messy data
 
 
